@@ -1,0 +1,264 @@
+[debug] [2024-05-14T08:27:14.956Z] ----------------------------------------------------------------------
+[debug] [2024-05-14T08:27:14.957Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\aashi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-05-14T08:27:14.958Z] CLI Version:   13.8.3
+[debug] [2024-05-14T08:27:14.958Z] Platform:      win32
+[debug] [2024-05-14T08:27:14.958Z] Node Version:  v20.12.2
+[debug] [2024-05-14T08:27:14.958Z] Time:          Tue May 14 2024 14:12:14 GMT+0545 (Nepal Time)
+[debug] [2024-05-14T08:27:14.958Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-14T08:27:15.001Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-14T08:27:15.001Z] > authorizing via signed-in user (aashish01au@gmail.com)
+[debug] [2024-05-14T08:27:15.001Z] [iam] checking project host-6833d for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-05-14T08:27:15.003Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/host-6833d:testIamPermissions [none]
+[debug] [2024-05-14T08:27:15.003Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/host-6833d:testIamPermissions x-goog-quota-user=projects/host-6833d
+[debug] [2024-05-14T08:27:15.003Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/host-6833d:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-14T08:27:16.834Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/host-6833d:testIamPermissions 200
+[debug] [2024-05-14T08:27:16.834Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/host-6833d:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-14T08:27:16.835Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/host-6833d [none]
+[debug] [2024-05-14T08:27:17.405Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/host-6833d 200
+[debug] [2024-05-14T08:27:17.405Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/host-6833d {"projectId":"host-6833d","projectNumber":"818046785452","displayName":"host","name":"projects/host-6833d","resources":{"hostingSite":"host-6833d"},"state":"ACTIVE","etag":"1_7850be23-3c01-4439-8494-f3a7085f22fc"}
+[debug] [2024-05-14T08:27:20.592Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/host-6833d/sites pageToken=&pageSize=10
+[debug] [2024-05-14T08:27:22.072Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/host-6833d/sites 200
+[debug] [2024-05-14T08:27:22.072Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/host-6833d/sites {"sites":[{"name":"projects/host-6833d/sites/host-6833d","defaultUrl":"https://host-6833d.web.app","appId":"1:818046785452:web:8f2805fd253f8a4f1ecc09","type":"DEFAULT_SITE"}]}
+[debug] [2024-05-14T08:27:22.072Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:818046785452:web:8f2805fd253f8a4f1ecc09/config [none]
+[debug] [2024-05-14T08:27:23.422Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:818046785452:web:8f2805fd253f8a4f1ecc09/config 200
+[debug] [2024-05-14T08:27:23.423Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:818046785452:web:8f2805fd253f8a4f1ecc09/config {"projectId":"host-6833d","appId":"1:818046785452:web:8f2805fd253f8a4f1ecc09","storageBucket":"host-6833d.appspot.com","apiKey":"AIzaSyBdzJSat_zFR7tjWFcln6wP1ggXPx4rCzo","authDomain":"host-6833d.firebaseapp.com","messagingSenderId":"818046785452","measurementId":"G-RTQ1SNQX6E"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-05-14T08:27:28.585Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/host-6833d/sites/host-6833d [none]
+[debug] [2024-05-14T08:27:30.055Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/host-6833d/sites/host-6833d 200
+[debug] [2024-05-14T08:27:30.055Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/host-6833d/sites/host-6833d {"name":"projects/host-6833d/sites/host-6833d","defaultUrl":"https://host-6833d.web.app","appId":"1:818046785452:web:8f2805fd253f8a4f1ecc09","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.3
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info]  ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+
+[info] uncaughtException [Error: EPERM: operation not permitted, open 'C:\Users\aashi\Documents\NEXTjs\kantipurridedashboard\.next\trace'] {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'C:\\Users\\aashi\\Documents\\NEXTjs\\kantipurridedashboard\\.next\\trace'
+}
+
+[debug] [2024-05-14T08:27:39.072Z] Error: ENOENT: no such file or directory, open 'C:\Users\aashi\Documents\NEXTjs\kantipurridedashboard\.next\server\middleware-manifest.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-05-14T08:30:22.655Z] ----------------------------------------------------------------------
+[debug] [2024-05-14T08:30:22.657Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\aashi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-05-14T08:30:22.657Z] CLI Version:   13.8.3
+[debug] [2024-05-14T08:30:22.657Z] Platform:      win32
+[debug] [2024-05-14T08:30:22.657Z] Node Version:  v20.12.2
+[debug] [2024-05-14T08:30:22.657Z] Time:          Tue May 14 2024 14:15:22 GMT+0545 (Nepal Time)
+[debug] [2024-05-14T08:30:22.657Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-14T08:30:22.712Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-14T08:30:22.712Z] > authorizing via signed-in user (aashish01au@gmail.com)
+[debug] [2024-05-14T08:30:22.712Z] [iam] checking project host-6833d for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-05-14T08:30:22.713Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/host-6833d:testIamPermissions [none]
+[debug] [2024-05-14T08:30:22.714Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/host-6833d:testIamPermissions x-goog-quota-user=projects/host-6833d
+[debug] [2024-05-14T08:30:22.714Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/host-6833d:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-14T08:30:24.554Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/host-6833d:testIamPermissions 200
+[debug] [2024-05-14T08:30:24.554Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/host-6833d:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-14T08:30:24.555Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/host-6833d [none]
+[debug] [2024-05-14T08:30:25.882Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/host-6833d 200
+[debug] [2024-05-14T08:30:25.883Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/host-6833d {"projectId":"host-6833d","projectNumber":"818046785452","displayName":"host","name":"projects/host-6833d","resources":{"hostingSite":"host-6833d"},"state":"ACTIVE","etag":"1_7850be23-3c01-4439-8494-f3a7085f22fc"}
+[debug] [2024-05-14T08:30:28.034Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/host-6833d/sites pageToken=&pageSize=10
+[debug] [2024-05-14T08:30:29.223Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/host-6833d/sites 200
+[debug] [2024-05-14T08:30:29.223Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/host-6833d/sites {"sites":[{"name":"projects/host-6833d/sites/host-6833d","defaultUrl":"https://host-6833d.web.app","appId":"1:818046785452:web:8f2805fd253f8a4f1ecc09","type":"DEFAULT_SITE"}]}
+[debug] [2024-05-14T08:30:29.224Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:818046785452:web:8f2805fd253f8a4f1ecc09/config [none]
+[debug] [2024-05-14T08:30:29.879Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:818046785452:web:8f2805fd253f8a4f1ecc09/config 200
+[debug] [2024-05-14T08:30:29.879Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:818046785452:web:8f2805fd253f8a4f1ecc09/config {"projectId":"host-6833d","appId":"1:818046785452:web:8f2805fd253f8a4f1ecc09","storageBucket":"host-6833d.appspot.com","apiKey":"AIzaSyBdzJSat_zFR7tjWFcln6wP1ggXPx4rCzo","authDomain":"host-6833d.firebaseapp.com","messagingSenderId":"818046785452","measurementId":"G-RTQ1SNQX6E"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-05-14T08:30:34.356Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/host-6833d/sites/host-6833d [none]
+[debug] [2024-05-14T08:30:34.764Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/host-6833d/sites/host-6833d 200
+[debug] [2024-05-14T08:30:34.765Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/host-6833d/sites/host-6833d {"name":"projects/host-6833d/sites/host-6833d","defaultUrl":"https://host-6833d.web.app","appId":"1:818046785452:web:8f2805fd253f8a4f1ecc09","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.3
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[debug] [2024-05-14T09:44:01.187Z] ----------------------------------------------------------------------
+[debug] [2024-05-14T09:44:01.188Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\aashi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-05-14T09:44:01.189Z] CLI Version:   13.8.3
+[debug] [2024-05-14T09:44:01.189Z] Platform:      win32
+[debug] [2024-05-14T09:44:01.189Z] Node Version:  v20.12.2
+[debug] [2024-05-14T09:44:01.189Z] Time:          Tue May 14 2024 15:29:01 GMT+0545 (Nepal Time)
+[debug] [2024-05-14T09:44:01.189Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-14T09:44:01.238Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-14T09:44:01.238Z] > authorizing via signed-in user (aashish01au@gmail.com)
+[debug] [2024-05-14T09:44:01.239Z] [iam] checking project host-6833d for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-05-14T09:44:01.240Z] > refreshing access token with scopes: []
+[debug] [2024-05-14T09:44:01.241Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-05-14T09:44:01.241Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-14T09:44:01.637Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-05-14T09:44:01.637Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-14T09:44:01.649Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/host-6833d:testIamPermissions [none]
+[debug] [2024-05-14T09:44:01.650Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/host-6833d:testIamPermissions x-goog-quota-user=projects/host-6833d
+[debug] [2024-05-14T09:44:01.650Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/host-6833d:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-14T09:44:03.292Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/host-6833d:testIamPermissions 200
+[debug] [2024-05-14T09:44:03.292Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/host-6833d:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-14T09:44:03.294Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/host-6833d [none]
+[debug] [2024-05-14T09:44:04.192Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/host-6833d 200
+[debug] [2024-05-14T09:44:04.192Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/host-6833d {"projectId":"host-6833d","projectNumber":"818046785452","displayName":"host","name":"projects/host-6833d","resources":{"hostingSite":"host-6833d"},"state":"ACTIVE","etag":"1_7850be23-3c01-4439-8494-f3a7085f22fc"}
+[debug] [2024-05-14T09:44:06.699Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/host-6833d/sites pageToken=&pageSize=10
+[debug] [2024-05-14T09:44:07.968Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/host-6833d/sites 200
+[debug] [2024-05-14T09:44:07.968Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/host-6833d/sites {"sites":[{"name":"projects/host-6833d/sites/host-6833d","defaultUrl":"https://host-6833d.web.app","appId":"1:818046785452:web:8f2805fd253f8a4f1ecc09","type":"DEFAULT_SITE"}]}
+[debug] [2024-05-14T09:44:07.969Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:818046785452:web:8f2805fd253f8a4f1ecc09/config [none]
+[debug] [2024-05-14T09:44:08.499Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:818046785452:web:8f2805fd253f8a4f1ecc09/config 200
+[debug] [2024-05-14T09:44:08.500Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:818046785452:web:8f2805fd253f8a4f1ecc09/config {"projectId":"host-6833d","appId":"1:818046785452:web:8f2805fd253f8a4f1ecc09","storageBucket":"host-6833d.appspot.com","apiKey":"AIzaSyBdzJSat_zFR7tjWFcln6wP1ggXPx4rCzo","authDomain":"host-6833d.firebaseapp.com","messagingSenderId":"818046785452","measurementId":"G-RTQ1SNQX6E"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-05-14T09:44:12.916Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/host-6833d/sites/host-6833d [none]
+[debug] [2024-05-14T09:44:13.355Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/host-6833d/sites/host-6833d 200
+[debug] [2024-05-14T09:44:13.356Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/host-6833d/sites/host-6833d {"name":"projects/host-6833d/sites/host-6833d","defaultUrl":"https://host-6833d.web.app","appId":"1:818046785452:web:8f2805fd253f8a4f1ecc09","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.3
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] 
+Failed to compile.
+
+[info] 
+./src/app/dispatcher/page.tsx
+50:13  Warning: Image elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+
+./src/app/godView/page.tsx
+49:5  Warning: Image elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+56:5  Warning: Image elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+63:5  Warning: Image elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+70:5  Warning: Image elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+77:5  Warning: Image elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+84:5  Warning: Image elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+93:13  Warning: Image elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+
+./src/app/navbar/page.tsx
+188:36  Error: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[debug] [2024-05-14T09:44:27.488Z] Error: ENOENT: no such file or directory, open 'C:\Users\aashi\Documents\NEXTjs\kantipurridedashboard\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-05-14T09:45:58.188Z] ----------------------------------------------------------------------
+[debug] [2024-05-14T09:45:58.190Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\aashi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-05-14T09:45:58.190Z] CLI Version:   13.8.3
+[debug] [2024-05-14T09:45:58.191Z] Platform:      win32
+[debug] [2024-05-14T09:45:58.191Z] Node Version:  v20.12.2
+[debug] [2024-05-14T09:45:58.191Z] Time:          Tue May 14 2024 15:30:58 GMT+0545 (Nepal Time)
+[debug] [2024-05-14T09:45:58.191Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-14T09:45:58.240Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-14T09:45:58.241Z] > authorizing via signed-in user (aashish01au@gmail.com)
+[debug] [2024-05-14T09:45:58.241Z] [iam] checking project host-6833d for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-05-14T09:45:58.242Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/host-6833d:testIamPermissions [none]
+[debug] [2024-05-14T09:45:58.242Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/host-6833d:testIamPermissions x-goog-quota-user=projects/host-6833d
+[debug] [2024-05-14T09:45:58.242Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/host-6833d:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-14T09:46:00.100Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/host-6833d:testIamPermissions 200
+[debug] [2024-05-14T09:46:00.100Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/host-6833d:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-14T09:46:00.101Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/host-6833d [none]
+[debug] [2024-05-14T09:46:00.721Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/host-6833d 200
+[debug] [2024-05-14T09:46:00.721Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/host-6833d {"projectId":"host-6833d","projectNumber":"818046785452","displayName":"host","name":"projects/host-6833d","resources":{"hostingSite":"host-6833d"},"state":"ACTIVE","etag":"1_7850be23-3c01-4439-8494-f3a7085f22fc"}
+[debug] [2024-05-14T09:46:03.201Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/host-6833d/sites pageToken=&pageSize=10
+[debug] [2024-05-14T09:46:04.386Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/host-6833d/sites 200
+[debug] [2024-05-14T09:46:04.386Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/host-6833d/sites {"sites":[{"name":"projects/host-6833d/sites/host-6833d","defaultUrl":"https://host-6833d.web.app","appId":"1:818046785452:web:8f2805fd253f8a4f1ecc09","type":"DEFAULT_SITE"}]}
+[debug] [2024-05-14T09:46:04.387Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:818046785452:web:8f2805fd253f8a4f1ecc09/config [none]
+[debug] [2024-05-14T09:46:05.257Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:818046785452:web:8f2805fd253f8a4f1ecc09/config 200
+[debug] [2024-05-14T09:46:05.257Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:818046785452:web:8f2805fd253f8a4f1ecc09/config {"projectId":"host-6833d","appId":"1:818046785452:web:8f2805fd253f8a4f1ecc09","storageBucket":"host-6833d.appspot.com","apiKey":"AIzaSyBdzJSat_zFR7tjWFcln6wP1ggXPx4rCzo","authDomain":"host-6833d.firebaseapp.com","messagingSenderId":"818046785452","measurementId":"G-RTQ1SNQX6E"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-05-14T09:46:10.532Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/host-6833d/sites/host-6833d [none]
+[debug] [2024-05-14T09:46:11.897Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/host-6833d/sites/host-6833d 200
+[debug] [2024-05-14T09:46:11.897Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/host-6833d/sites/host-6833d {"name":"projects/host-6833d/sites/host-6833d","defaultUrl":"https://host-6833d.web.app","appId":"1:818046785452:web:8f2805fd253f8a4f1ecc09","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.3
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] 
+./src/app/dispatcher/page.tsx
+50:13  Warning: Image elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+
+./src/app/godView/page.tsx
+49:5  Warning: Image elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+56:5  Warning: Image elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+63:5  Warning: Image elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+70:5  Warning: Image elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+77:5  Warning: Image elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+84:5  Warning: Image elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+93:13  Warning: Image elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[info] Failed to compile.
+
+
+[info] .next/types/app/dispute/page.ts:8:13
+Type error: Type 'OmitWithTag<typeof import("C:/Users/aashi/Documents/NEXTjs/kantipurridedashboard/src/app/dispute/page"), "metadata" | "default" | "config" | "generateStaticParams" | "revalidate" | "dynamic" | ... 7 more ... | "generateViewport", "">' does not satisfy the constraint '{ [x: string]: never; }'.
+  Property 'columns' is incompatible with index signature.
+    Type 'ColumnDef<Payment>[]' is not assignable to type 'never'.
+
+   6 |
+   7 | // Check that the entry is a valid entry
+>  8 | checkFields<Diff<{
+     |             ^
+   9 |   default: Function
+  10 |   config?: {}
+  11 |   generateStaticParams?: Function
+
+[debug] [2024-05-14T09:46:23.957Z] Error: ENOENT: no such file or directory, open 'C:\Users\aashi\Documents\NEXTjs\kantipurridedashboard\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
